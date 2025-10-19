@@ -12,12 +12,12 @@ import (
 )
 
 type Handlers struct {
-	userService *services.UserService
+	userService services.UserService
 	parser      *parser.Parser
 }
 
 func NewHandlers(
-	userService *services.UserService,
+	userService services.UserService,
 	parser *parser.Parser,
 ) *Handlers {
 	return &Handlers{
